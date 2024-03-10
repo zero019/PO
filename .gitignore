@@ -13,4 +13,4 @@
 
 libraries/
 
-../target/
+/target/
