@@ -4,41 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="第一次提交">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/MyBatisMapperScannerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/MybatisGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/authEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/statesEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApplys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContracts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquerys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+    <list default="true" id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="1.实体类创建&#10;2.创建自动生成数据库备份">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/PoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/PoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/LoginUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApply.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoApplys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseSub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoContracts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoInquery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoInquerys.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoOrders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoWarehouse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoWarehouses.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseSub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Dept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Dept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApplys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApplys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContracts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquerys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquerys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +89,20 @@
       <recent name="Z:\PO" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MybatisGenerate">
+    <configuration name="MybatisGenerate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zeronly.po.generater.MybatisGenerate" />
+      <module name="PO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zeronly.po.generater.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PO" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="PO" />
@@ -112,6 +111,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MybatisGenerate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,7 +132,7 @@
       <workItem from="1710036011372" duration="752000" />
       <workItem from="1710066040661" duration="5687000" />
       <workItem from="1710135319643" duration="1291000" />
-      <workItem from="1710165556103" duration="34253000" />
+      <workItem from="1710165556103" duration="46741000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1710085677877</created>
@@ -179,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710088095075</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1.实体类创建&#10;2.创建自动生成数据库备份">
+      <created>1710302076259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710302076259</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +221,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="1.实体类创建&#10;2.创建自动生成数据库备份" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.实体类创建&#10;2.创建自动生成数据库备份" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
