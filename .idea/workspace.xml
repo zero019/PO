@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="第一次提交">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/MyBatisMapperScannerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/generater/MybatisGenerate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/authEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/statesEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApplys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContracts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquerys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoApply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoApply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoApplys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/BaseSub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoContracts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoInquery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoInquery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoInquerys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoOrders.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoWarehouse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/PoWarehouses.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/base/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <branch-grouping />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\.m2" />
+        <option name="mavenHome" value="D:/java/apache-maven-3.8.3" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.8.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2dIjQbIZdhXs9b9RWH79cbZmPb3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "Z:/PO",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.41954023",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "b3918665ee674080bf505e1b2d862187",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\PO" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PO" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="PO" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zeronly.po.PoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="" />
+      <created>1709702474160</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709702474160</updated>
+      <workItem from="1709702475521" duration="3194000" />
+      <workItem from="1709717475563" duration="8344000" />
+      <workItem from="1709961690016" duration="7451000" />
+      <workItem from="1709989697825" duration="6281000" />
+      <workItem from="1710036011372" duration="752000" />
+      <workItem from="1710066040661" duration="5687000" />
+      <workItem from="1710135319643" duration="1291000" />
+      <workItem from="1710165556103" duration="34253000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1710085677877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710085677877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第一次提交">
+      <created>1710085931466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710085931466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第一次提交">
+      <created>1710087028532</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710087028532</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第一次提交">
+      <created>1710087223287</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710087223287</updated>
+    </task>
+    <task id="LOCAL-00005" summary="第一次提交">
+      <created>1710087422867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710087422867</updated>
+    </task>
+    <task id="LOCAL-00006" summary="第一次提交">
+      <created>1710087613822</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710087613822</updated>
+    </task>
+    <task id="LOCAL-00007" summary="第一次提交">
+      <created>1710088095075</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710088095075</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

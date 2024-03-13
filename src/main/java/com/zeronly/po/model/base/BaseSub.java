@@ -1,21 +1,14 @@
 package com.zeronly.po.model.base;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
- * 采购申请子表
- * @author zeronly 2024/3/9
+ * @author zeronly 2024/3/12
  */
 @Data
-public class PoApplys extends Base{
-    @TableId(type = IdType.ASSIGN_ID)
-    private String id;
-
+public class BaseSub extends Base{
     //采购申请主表id
     private String pid;
     //行号
@@ -34,10 +27,4 @@ public class PoApplys extends Base{
     private BigDecimal price;
     //参考金额
     private BigDecimal money;
-    //建议订货日期
-    private Date dueDate;
-    //计划到货日期
-    private Date arrDate;
-    //需求日期
-    private Date reqDate;
 }

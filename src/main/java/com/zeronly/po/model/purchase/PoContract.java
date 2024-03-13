@@ -1,8 +1,9 @@
-package com.zeronly.po.model.base;
+package com.zeronly.po.model.purchase;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.zeronly.po.model.base.BaseMain;
 import lombok.Data;
 
 import java.util.Date;
@@ -13,7 +14,7 @@ import java.util.Date;
  */
 @Data
 @TableName("po_contract")
-public class PoContract extends Base{
+public class PoContract extends BaseMain {
     @TableId(type = IdType.ASSIGN_ID)
     private String id;
 
@@ -27,12 +28,13 @@ public class PoContract extends Base{
     private Date validateDateEnd;
     //合同执行状态
     private String status;
+    //合同金额
+    private String contractMoney;
+    //选定后总金额
+    private String totalMoney;
+
     //源单Id
     private String sourceId;
     //源单code
     private String sourceCode;
-    //合同金额
-    private String contractMoney;
-    //采购合同pdf文件(记载的是路径地址)
-    private String contractDoc;
 }

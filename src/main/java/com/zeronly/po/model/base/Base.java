@@ -24,4 +24,8 @@ public class Base {
      * 0 没有删除； 1已经删除
      */
     private Integer isDeleted;
+    /**
+     * 状态:有效 1/无效 0
+     */
+    private Integer states;
 }

@@ -1,4 +1,4 @@
-package com.zeronly.po.model.base;
+package com.zeronly.po.model.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

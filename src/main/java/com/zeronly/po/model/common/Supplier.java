@@ -1,8 +1,9 @@
-package com.zeronly.po.model.base;
+package com.zeronly.po.model.common;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.zeronly.po.model.base.Base;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -24,5 +25,5 @@ public class Supplier extends Base {
     private String regNumber; // 工商注册号
     private String phone; //公司电话
     private String email; //联系公司邮箱
-    private String contact; //财务联系人姓名
+    private String contactName; //财务联系人姓名
 }
