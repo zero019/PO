@@ -2,18 +2,18 @@ package com.zeronly.po.controller;
 
 
 import com.zeronly.po.model.ResResult;
+import com.zeronly.po.model.common.LoginUser;
 import com.zeronly.po.model.common.User;
 import com.zeronly.po.model.purchase.PoContract;
+import com.zeronly.po.security.MyUserSecurityService;
 import com.zeronly.po.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -25,11 +25,21 @@ import java.util.Map;
  * @author zeronly
  * @since 2024-03-13
  */
-@Controller
+@RestController
 @RequestMapping("/po/user")
 public class UserController {
     @Autowired
     private IUserService iUserService;
+    @Autowired
+    private MyUserSecurityService myUserSecurityService;
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @CrossOrigin
+    public ResResult login(String username,String password) {
+        ResResult resResult = iUserService.login(username, password);
+        return resResult;
+    }
+
     //增
     @PostMapping("/insert")
     public ResResult insert(@RequestBody List<User> users){
@@ -64,13 +74,13 @@ public class UserController {
     }
 
     //查只能查
-    @GetMapping("/read")
-    public ResResult read(@RequestBody Map<String, Object> query){
-        List<User> res = iUserService.listByMap(query);
-        if (!CollectionUtils.isEmpty(res)){
-            return ResResult.ok(res);
-        } else {
-            return ResResult.fail();
+    @PostMapping("/read")
+    public ResResult read(@RequestBody(required = false) Map<String, Object> query){
+        if (CollectionUtils.isEmpty(query)){
+            query = new HashMap<>();
         }
+        List<User> res = iUserService.listByMap(query);
+
+        return ResResult.ok(res);
     }
 }

@@ -1,5 +1,6 @@
 package com.zeronly.po.model.common;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,9 +22,12 @@ import java.util.List;
 public class LoginUser implements UserDetails {
     private User user;
 
+    @JSONField(serialize = false)
+    private List<GrantedAuthority>  authorities;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        List<GrantedAuthority> authorities = new ArrayList<>();
+        authorities = new ArrayList<>();
         String authority = user.getAuthorities();
 
         //切片
@@ -47,21 +51,21 @@ public class LoginUser implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return user.getIsDeleted()==0 ? true : false;
+        return user.getIsDeleted()==null || user.getIsDeleted()==0 ? true : false;
     }
 }

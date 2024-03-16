@@ -1,5 +1,6 @@
 package com.zeronly.po.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 

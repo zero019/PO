@@ -1,5 +1,7 @@
 package com.zeronly.po.service;
 
+import com.zeronly.po.model.ResResult;
+import com.zeronly.po.model.common.LoginUser;
 import com.zeronly.po.model.common.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +15,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IUserService extends IService<User> {
 
+    public ResResult login(LoginUser user);
+
+    public ResResult login(String username, String password);
 }

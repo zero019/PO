@@ -8,13 +8,11 @@ import com.zeronly.po.service.IDeptService;
 import com.zeronly.po.service.IPoApplyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +24,7 @@ import java.util.Map;
  * @author zeronly
  * @since 2024-03-13
  */
-@Controller
+@RestController
 @RequestMapping("/po/po-apply")
 public class PoApplyController {
 
@@ -66,14 +64,16 @@ public class PoApplyController {
     }
 
     //查只能查
-    @GetMapping("/read")
-    public ResResult read(@RequestBody Map<String, Object> query){
-        List<PoApply> res = iPoApplyService.listByMap(query);
-        if (!CollectionUtils.isEmpty(res)){
-            return ResResult.ok(res);
-        } else {
-            return ResResult.fail();
+    @PostMapping("/read")
+    public ResResult read(@RequestBody(required = false) Map<String, Object> query){
+        if (CollectionUtils.isEmpty(query)){
+            query = new HashMap<>();
         }
+        List<PoApply> res = iPoApplyService.listByMap(query);
+
+        return ResResult.ok(res);
     }
+
+
 
 }

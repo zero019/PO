@@ -6,12 +6,12 @@ package com.zeronly.po.model.enums;
  */
 
 public enum authEnum {
-    ADMIN("001"),
-    APPLY("002"),
-    CONTRACT("003"),
-    INQUERY("004"),
-    ORDER("005"),
-    WAREHOUSE("006"),
+    ROLE_ADMIN("001"),
+    ROLE_APPLY("002"),
+    ROLE_CONTRACT("003"),
+    ROLE_INQUERY("004"),
+    ROLE_ORDER("005"),
+    ROLE_WAREHOUSE("006"),
 
     PURCHASE("100");
 

@@ -1,5 +1,7 @@
 package com.zeronly.po.model.purchase;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.gitee.sunchenbin.mybatis.actable.annotation.Column;
 import com.zeronly.po.model.base.BaseSub;
@@ -14,6 +16,9 @@ import java.math.BigDecimal;
 @Data
 @TableName("po_warehouses")
 public class PoWarehouses extends BaseSub {
+    @TableId(type = IdType.ASSIGN_ID)
+    @Column
+    private String id;
     //采购合同单号
     @Column
     private String code;

@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -26,7 +27,7 @@ import java.util.Map;
  * @since 2024-03-13
  */
 @Controller
-@RequestMapping("/po/po-inquerys")
+@RequestMapping("/po/po-inquery/inquerys")
 public class PoInquerysController {
     @Autowired
     private IPoInquerysService iPoInquerysService;
@@ -64,13 +65,12 @@ public class PoInquerysController {
     }
 
     //查只能查
-    @GetMapping("/read")
-    public ResResult read(@RequestBody Map<String, Object> query){
-        List<PoInquerys> res = iPoInquerysService.listByMap(query);
-        if (!CollectionUtils.isEmpty(res)){
-            return ResResult.ok(res);
-        } else {
-            return ResResult.fail();
+    @PostMapping("/read")
+    public ResResult read(@RequestBody(required = false) Map<String, Object> query){
+        if (CollectionUtils.isEmpty(query)){
+            query = new HashMap<>();
         }
+        List<PoInquerys> res = iPoInquerysService.listByMap(query);
+        return ResResult.ok(res);
     }
 }

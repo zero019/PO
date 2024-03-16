@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 
-@MapperScan({"com.gitee.sunchenbin.mybatis.actable.dao.*"} )
-@ComponentScan("com.gitee.sunchenbin.mybatis.actable.manager.*")
+@MapperScan({"com.zeronly.po.mapper","com.gitee.sunchenbin.mybatis.actable.dao.*"} )
+@ComponentScan(basePackages = {"com.gitee.sunchenbin.mybatis.actable.manager.*","com.zeronly.po"})
 @SpringBootApplication
 public class PoApplication {
 

@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="1.基础代码框架搭建完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/ResResult.java" afterDir="false" />
+    <list default="true" id="406eb339-695b-4c95-b459-f5b14400d31e" name="Changes" comment="1.控制层增删改查&#10;2.返回通用封装类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/conf/FastJsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/conf/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/conf/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/conf/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/security/JwtAuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/security/MySecurityConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/security/MyUserSecurityService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/PoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/PoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/DeptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/DeptController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoApplyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoApplyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoApplysController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoApplysController.java" afterDir="false" />
@@ -20,6 +29,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoWarehousesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/PoWarehousesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/SupplierController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/ResResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/ResResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/authEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/enums/authEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/model/purchase/PoWarehouses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zeronly/po/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zeronly/po/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +83,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JavaProjects/PO",
+    "last_opened_file_path": "D:/JavaProjects/PO/src/main/java/com/zeronly/po/conf",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.41954023",
@@ -76,14 +92,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProjects\PO\src\main\java\com\zeronly\po\conf" />
       <recent name="Z:\PO" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zeronly.po.security" />
       <recent name="com.zeronly.po.model" />
     </key>
   </component>
@@ -132,7 +153,9 @@
       <workItem from="1710135319643" duration="1291000" />
       <workItem from="1710165556103" duration="47503000" />
       <workItem from="1710325338582" duration="9784000" />
-      <workItem from="1710414738135" duration="3189000" />
+      <workItem from="1710414738135" duration="6461000" />
+      <workItem from="1710428097098" duration="2021000" />
+      <workItem from="1710550143453" duration="18237000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1710085677877</created>
@@ -197,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710316190039</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.控制层增删改查&#10;2.返回通用封装类">
+      <created>1710424859384</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710424859384</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +260,41 @@
     <MESSAGE value="第一次提交" />
     <MESSAGE value="1.实体类创建&#10;2.创建自动生成数据库备份" />
     <MESSAGE value="1.基础代码框架搭建完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.基础代码框架搭建完成" />
+    <MESSAGE value="1.控制层增删改查&#10;2.返回通用封装类" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.控制层增删改查&#10;2.返回通用封装类" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zeronly/po/model/common/LoginUser.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../.m2/org/springframework/security/spring-security-core/5.7.2/spring-security-core-5.7.2.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.class</url>
+          <line>64</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zeronly/po/controller/UserController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zeronly/po/security/JwtAuthenticationTokenFilter.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
